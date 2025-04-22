@@ -1,0 +1,83 @@
+---
+import Section from '../ui/Section.astro';
+import Card from '../ui/Card.astro';
+
+// Get the company logos
+interface Experience {
+  company: string;
+  logo: string;
+  position: string;
+  period: string;
+  description: string;
+}
+
+const experiences: Experience[] = [
+  {
+    company: 'QuintaAndar',
+    logo: '/src/assets/exp/quintoandar.jpeg',
+    position: 'Front-end Tech Lead',
+    period: 'Jan 2022 - Presente',
+    description: 'Lidero equipe de desenvolvimento front-end, implementando arquiteturas escaláveis com React, TypeScript e Next.js. Responsável pela implementação de design systems e CI/CD.'
+  },
+  {
+    company: 'Linx',
+    logo: '/src/assets/exp/linx.jpeg',
+    position: 'Desenvolvedor Front-end Senior',
+    period: 'Mar 2020 - Dec 2021',
+    description: 'Desenvolvimento e manutenção de aplicações de e-commerce utilizando Vue.js e Nuxt. Implementação de estratégias de performance e SEO.'
+  },
+  {
+    company: 'Luizalabs',
+    logo: '/src/assets/exp/luizalabs.jpeg',
+    position: 'Desenvolvedor Front-end',
+    period: 'Fev 2019 - Feb 2020',
+    description: 'Desenvolvimento de soluções front-end para marketplace, utilizando React e Redux. Melhorias de UX e otimização de performance.'
+  },
+  {
+    company: 'InstaCarro',
+    logo: '/src/assets/exp/instacarro.jpeg',
+    position: 'Desenvolvedor Front-end',
+    period: 'Jun 2018 - Jan 2019',
+    description: 'Implementação de interfaces para plataforma de leilão de veículos com React e GraphQL. Integração com APIs RESTful.'
+  },
+  {
+    company: 'Atta',
+    logo: '/src/assets/exp/atta.jpeg',
+    position: 'Desenvolvedor Full Stack',
+    period: 'Jan 2017 - May 2018',
+    description: 'Desenvolvimento de aplicações web com foco em UI/UX usando Angular. Backend com Node.js e MongoDB.'
+  },
+  {
+    company: 'Somai',
+    logo: '/src/assets/exp/somai.jpeg',
+    position: 'Desenvolvedor Front-end Júnior',
+    period: 'Fev 2016 - Dec 2016',
+    description: 'Desenvolvimento de interfaces com HTML, CSS e JavaScript. Implementação de sites responsivos e landing pages.'
+  }
+];
+---
+
+<Section id="experience" title="Experiência Profissional" subtitle="Minha trajetória em empresas de tecnologia e projetos desafiadores">
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+    {
+      experiences.map(({ company, logo, position, period, description }) => (
+        <Card hover={true} class="h-full">
+          <div class="p-6 flex flex-col h-full">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden flex items-center justify-center mr-4">
+                <img src={logo} alt={company} class="w-10 h-10 object-contain" />
+              </div>
+              <div>
+                <h3 class="font-bold text-xl">{company}</h3>
+                <p class="text-sm text-gray-500 dark:text-gray-400">{period}</p>
+              </div>
+            </div>
+            
+            <h4 class="text-lg font-medium mb-2 text-primary">{position}</h4>
+            <p class="text-gray-600 dark:text-gray-300 text-sm mt-auto">{description}</p>
+          </div>
+        </Card>
+      ))
+    }
+  </div>
+</Section> 
