@@ -8,7 +8,7 @@ export default {
         sans: ['Poppins', 'sans-serif'],
       },
       colors: {
-        primary: '#4f46e5',
+        primary: '#6c63ff',
         secondary: '#0284c7',
         dark: {
           bg: '#121212',

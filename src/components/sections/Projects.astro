@@ -14,45 +14,45 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: 'E-commerce Dashboard',
-    description: 'Dashboard completo para gerenciamento de produtos e vendas com análise de dados em tempo real.',
+    title: 'ERP para Postos Linx.',
+    description: 'ERP completo com dezenas de módulos para gerenciamento de postos de combustível.',
     image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1170&auto=format&fit=crop',
-    tags: ['React', 'TypeScript', 'Redux', 'Styled Components'],
+    tags: ['Vue.js', 'Nuxt.js', 'TypeScript', 'NuxtUI'],
     liveUrl: 'https://example.com/project1',
-    repoUrl: 'https://github.com/example/project1',
+    
   },
   {
-    title: 'Aplicativo de Finanças',
-    description: 'Aplicativo para controle financeiro pessoal com categorização automática e relatórios detalhados.',
+    title: 'E-commerce Netshoes.',
+    description: 'Maior e-commerce esportivo do Brasil, com milhões de acessos semanais.',
     image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=1036&auto=format&fit=crop',
     tags: ['Vue.js', 'Vuex', 'TailwindCSS', 'Firebase'],
-    liveUrl: 'https://example.com/project2',
-    repoUrl: 'https://github.com/example/project2',
+    liveUrl: 'https://www.netshoes.com.br/',
+    
   },
   {
-    title: 'Sistema de Agendamento',
-    description: 'Sistema de agendamento para profissionais autônomos com sincronização de calendário e notificações.',
+    title: 'Plataforma QuintoAndar.',
+    description: 'Maior plataforma de aluguel de imóveis do Brasil, com milhões de acessos semanais.',
     image: 'https://images.unsplash.com/photo-1553267751-1c148a7280a1?q=80&w=1169&auto=format&fit=crop',
     tags: ['React', 'Node.js', 'MongoDB', 'Socket.io'],
-    liveUrl: 'https://example.com/project3',
+    liveUrl: 'https://www.quintoandar.com.br/',
   },
   {
-    title: 'Plataforma de Cursos',
-    description: 'Plataforma para criação e consumo de cursos online, com sistema de pagamentos e certificados.',
+    title: 'Plataforma iSolve (Atta).',
+    description: 'Plataforma  distribuição de crédito imobiliário e garantias locatícias utilizada por mais de 1500 imobiliárias.',
     image: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=1170&auto=format&fit=crop',
     tags: ['Vue.js', 'Nuxt.js', 'Express', 'PostgreSQL'],
-    repoUrl: 'https://github.com/example/project4',
+    liveUrl: 'https://garantia.quintocred.com.br/',
   },
   {
-    title: 'Rede Social para Desenvolvedores',
-    description: 'Uma rede social focada em compartilhamento de códigos e projetos para desenvolvedores.',
+    title: 'Plataforma de Imóveis NPi.',
+    description: 'Aplicação SSR focada em SEO e performance com Next.js. CMS com gerenciamento de imóveis e clientes.',
     image: 'https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?q=80&w=1170&auto=format&fit=crop',
     tags: ['React', 'GraphQL', 'Apollo', 'TypeScript'],
-    liveUrl: 'https://example.com/project5',
-    repoUrl: 'https://github.com/example/project5',
+    liveUrl: 'https://www.npiconsultoria.com.br/',
+   
   },
   {
-    title: 'App de Delivery',
+    title: 'Aplicativo Mobile GabiVegan.',
     description: 'Aplicativo para entrega de comida com rastreamento em tempo real e sistema de avaliação.',
     image: 'https://images.unsplash.com/photo-1565843708714-52ecf69ab81f?q=80&w=1170&auto=format&fit=crop',
     tags: ['React Native', 'Redux', 'Firebase', 'Google Maps API'],
@@ -85,7 +85,7 @@ const projects: Project[] = [
               <div class="flex gap-3">
                 {project.liveUrl && (
                   <Button href={project.liveUrl} target="_blank" size="sm">
-                    Demo
+                    Conhecer projeto
                   </Button>
                 )}
                 {project.repoUrl && (
