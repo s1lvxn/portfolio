@@ -1,70 +1,60 @@
 ---
-import Button from '../ui/Button.astro';
-import Section from '../ui/Section.astro';
+import Button from "../ui/Button.astro";
+import Section from "../ui/Section.astro";
 ---
 
-<Section id="about" title="Sobre Mim" subtitle="Conheça um pouco mais sobre minha trajetória e paixão pelo desenvolvimento front-end">
+<Section
+  id="about"
+  title="Sobre Mim"
+  subtitle="Quase nada e mais um pouco..."
+>
   <div class="grid md:grid-cols-2 gap-12 items-center">
     <div class="relative">
       <div class="relative z-10 overflow-hidden p-1">
-        <div class="w-full h-full  overflow-hidden">
-          <img 
-            src="/assets/images/mobile-application.svg" 
-            alt="Desenvolvedor Front-end" 
+        <div class="w-full h-full overflow-hidden">
+          <img
+            src="/assets/images/doug_fane.jpg"
+            alt="Desenvolvedor Front-end"
             class="w-full h-full object-cover"
           />
         </div>
       </div>
       <!-- Background decoration -->
-      <div class="absolute top-10 -left-6 w-28 h-28 bg-primary/20 dark:bg-primary/10 rounded-full filter blur-xl"></div>
-      <div class="absolute -bottom-6 -right-6 w-28 h-28 bg-secondary/20 dark:bg-secondary/10 rounded-full filter blur-xl"></div>
+      <div
+        class="absolute top-10 -left-6 w-28 h-28 bg-primary/20 dark:bg-primary/10 rounded-full filter blur-xl"
+      >
+      </div>
+      <div
+        class="absolute -bottom-6 -right-6 w-28 h-28 bg-secondary/20 dark:bg-secondary/10 rounded-full filter blur-xl"
+      >
+      </div>
     </div>
-    
+
     <div class="space-y-6">
-      <h3 class="text-2xl font-bold">Desenvolvedor Front-end Senior especializado em React, Vue e TypeScript</h3>
-      
+      <h3 class="text-2xl font-bold">
+        Capricorniano... <br /> Casado, pai de 2 filhos e 2 pets.
+      </h3>
+
       <p class="text-gray-600 dark:text-gray-300">
-        Com mais de 10 anos de experiência no desenvolvimento web, sou apaixonado por criar interfaces interativas e responsivas que proporcionam excelentes experiências aos usuários.
+        Capricorniano (ou seja, levo a vida a sério até demais), casado, pai de
+        dois filhos incríveis e dois pets que acham que são gente.
+        <br /><br />
+        Já passei por algumas das maiores big techs do Brasil — aquelas mesmas onde
+        você entra achando que vai mudar o mundo e descobre que precisa de três reuniões
+        para alterar um pixel. <br /><br />
+        Formado em Análise e Desenvolvimento de Sistemas com MBA em Gestão de Tecnologia
+        da Informação. <br /><br />
+        Com mais de 15 anos na tecnologia — sendo 8 deles focados em front-end —
+        já vi de tudo: IE6, jQuery, Flash, Dreanweaver, XAMPP, Revistinha PC Expert, e claro...modinha de SPAs e agora o hype eterno do React (gosto mais de Vue.js, mas não vou falar não).
+        
       </p>
-      
-      <p class="text-gray-600 dark:text-gray-300">
-        Minha jornada começou com HTML, CSS e JavaScript vanilla, mas logo me aprofundei em frameworks modernos como React e Vue. Atualmente, foco em arquiteturas escaláveis, performance e boas práticas de desenvolvimento.
-      </p>
-      
-      <p class="text-gray-600 dark:text-gray-300">
-        Trabalho com metodologias ágeis e tenho experiência em liderar equipes técnicas, sempre buscando a melhor solução para cada projeto.
-      </p>
-      
-      <ul class="grid grid-cols-2 gap-3 text-gray-600 dark:text-gray-300">
-        <li class="flex items-center gap-2">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-primary" viewBox="0 0 20 20" fill="currentColor">
-            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-          </svg>
-          <span>React</span>
-        </li>
-        <li class="flex items-center gap-2">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-primary" viewBox="0 0 20 20" fill="currentColor">
-            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-          </svg>
-          <span>Vue.js</span>
-        </li>
-        <li class="flex items-center gap-2">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-primary" viewBox="0 0 20 20" fill="currentColor">
-            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-          </svg>
-          <span>TypeScript</span>
-        </li>
-        <li class="flex items-center gap-2">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-primary" viewBox="0 0 20 20" fill="currentColor">
-            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-          </svg>
-          <span>Next.js</span>
-        </li>
-      </ul>
-      
+
+
+
       <div class="pt-2">
         <Button href="/cv.pdf" target="_blank">Download CV</Button>
       </div>
     </div>
   </div>
-</Section> 
+</Section>
+
