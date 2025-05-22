@@ -10,9 +10,8 @@ interface Props {
 
 const {
   type = 'person',
-  title = 'Renato Khael - Engenheiro de Software',
-  description = 'Portfolio profissional de Renato Khael, Engenheiro de Software e Desenvolvedor Front-end Senior.',
-  imageUrl = 'https://renatokhael.com/android-chrome-512x512.png'
+  title = 'Silvan Meier',
+  description = 'Persönliches Portfolio von Silvan Meier',
 } = Astro.props;
 
 const baseUrl = 'https://renatokhael.com';
@@ -21,17 +20,16 @@ const baseUrl = 'https://renatokhael.com';
 const personSchema = {
   "@context": "https://schema.org",
   "@type": "Person",
-  "name": "Renato Khael",
+  "name": "Silvan Meier",
   "url": baseUrl,
   "image": `${baseUrl}/android-chrome-512x512.png`,
   "sameAs": [
-    "https://www.linkedin.com/in/rkhael/",
-    "https://www.youtube.com/@renatokhael"
+    "https://www.instagram.com/silvan.mk3"
   ],
-  "jobTitle": "Engenheiro de Software",
+  "jobTitle": "Junior System Engineer",
   "worksFor": {
     "@type": "Organization",
-    "name": "Renato Khael"
+    "name": "Silvan Meier"
   },
   "description": description
 };
@@ -45,7 +43,7 @@ const websiteSchema = {
   "description": description,
   "author": {
     "@type": "Person",
-    "name": "Renato Khael"
+    "name": "Silvan Meier"
   },
   "potentialAction": {
     "@type": "SearchAction",

@@ -13,51 +13,25 @@ interface Experience {
 
 const experiences: Experience[] = [
 {
-    company: 'Linx',
-    logo: '/assets/svgs/linx.jpeg',
-    position: 'Desenvolvedor Front-end Senior',
-    period: 'Jan 2025 - Atual',
-    description: 'Atuo como Desenvolvedor Front-End Sênior no desenvolvimento de um ERP corporativo, utilizando Vue 3 (Nuxt 3) e Node.js (NestJS).'
+    company: 'Stiftung Gesundheitsförderung',
+    logo: '/assets/svgs/sbz.jpeg',
+    position: 'Apprenticeship as Platform Developer ',
+    period: 'Jan 2021 - ',
+    description: 'Implementing and maintaining business applications, Windows server infrastructure, network systems and the Citrix environment, along with providing efficient first and second level support to end users.'
   },
   {
-    company: 'Luizalabs',
-    logo: '/assets/svgs/luizalabs.jpeg',
-    position: 'Desenvolvedor Front-end (Full Stack)',
-    period: 'Set 2024 - Dez 2024',
-    description: 'Atuei na squad Freedom, sustentando a plataforma de e-commerce Netshoes (e mais 14 lojas), utilizada por milhões de clientes..'
+    company: 'Keeping the Bakery connected',
+    logo: '/assets/svgs/bakery.jpeg',
+    position: 'Freelancer',
+    period: 'Aug 2024 - ',
+    description: 'Besides my main job, I manage the  IT setup of a local bakery. I make sure everything runs reliably, so the focus stays where it should: baking great bread, not fixing computers.'
   },
-  {
-    company: 'QuintaAndar',
-    logo: '/assets/svgs/quintoandar.jpeg',
-    position: 'Engenheiro de Software Senior',
-    period: 'Out 2021 - Dez 2023',
-    description: 'Atuei como referência na squad Credit Experience, implementando Micro Frontends e Microsserviços, arquiteturas escaláveis com React, Java, Python e Node.'
-  },
-  {
-    company: 'Atta',
-    logo: '/assets/svgs/atta.jpeg',
-    position: 'Desenvolvedor Front-end',
-    period: 'Set 2020 - Out 2021',
-    description: 'Desenvolvimento de aplicações SPAs com Vue.js (Sistemas internos, Dashboard, etc) integração com APIs RESTful e autenticação OAuth.'
-  },
-  {
-    company: 'InstaCarro',
-    logo: '/assets/svgs/instacarro.jpeg',
-    position: 'Desenvolvedor Front-end',
-    period: 'Jan 2020 - Jul 2021',
-    description: 'Implementação de interfaces para plataforma de guia de veículos usados com React e GraphQL, integração com APIs RESTful.  '
-  },
-  {
-    company: 'Somai',
-    logo: '/assets/svgs/somai.jpeg',
-    position: 'Desenvolvedor Web Senior',
-    period: 'Jan 2016 - Dez 2019',
-    description: 'Desenvolvimento de diversas aplicações web, utilizando principalmente WordPress, PHP, MySQL, HTML, CSS e JavaScript.'
-  }
+ 
+
 ];
 ---
 
-<Section id="experience" title="Experiência Profissional" subtitle="Onde deixei minha sanidade em troca de tickets e deploys urgentes. ">
+<Section id="experience" title="Professional Experience" subtitle="My road so far.">
   <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
     {
       experiences.map(({ company, logo, position, period, description }) => (
