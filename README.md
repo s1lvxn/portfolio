@@ -1,4 +1,4 @@
-# Renato Khael | Software Engineer Portfolio
+##I used the following Astro framework template for my portfolio.
 
 ![Portfolio Theme](public/assets/theme.jpg)
 
